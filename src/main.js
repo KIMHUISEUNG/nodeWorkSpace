@@ -129,6 +129,10 @@ function solveBModern() {
 
       return {
         ...result,
+        [city]: {
+          ...result[city],
+          [pet]: (result[city]?.[pet] || 0) + 1,
+        },
       }
     }, {})
 }
