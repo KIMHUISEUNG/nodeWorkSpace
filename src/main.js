@@ -5,12 +5,13 @@
 const express = require("express")
 const { request } = require("http")
 const userRouter = express.Router()
-//const bodyparser = require("body-parser")
 const exp = require("constants")
 
 const app = express()
 app.use(express.json())
 
+app.set("views", "src/views")
+app.set("view engine", "pug")
 const PORT = 5000
 
 userRouter.get("/", (req, res) => {
@@ -21,19 +22,30 @@ const USERS = {
   15: {
     nickname: "foo",
   },
+  16: {
+    nickname: "bar",
+  },
 }
 
 userRouter.param("id", (req, res, next, value) => {
-  console.log("id parameter", value)
   // @ts-ignore
   req.user = USERS[value]
   next()
 })
 
+// /users/15
 userRouter.get("/:id", (req, res) => {
-  console.log("userRouter get ID")
-  // @ts-ignore
-  res.send(req.user)
+  const resMimeType = req.accepts(["json", "html"])
+
+  if (resMimeType === "json") {
+    // @ts-ignore
+    res.send(req.user)
+  } else if (resMimeType === "html") {
+    res.render("user-profile", {
+      // @ts-ignore
+      nickname: req.user.nickname,
+    })
+  }
 })
 
 userRouter.post("/", (req, res) => {
@@ -52,6 +64,12 @@ userRouter.post("/:id/nickname", (req, res) => {
 })
 
 app.use("/users", userRouter)
+
+app.get("/", (req, res) => {
+  res.render("index", {
+    message: "Hello, pug!!!",
+  })
+})
 
 app.listen(PORT, () => {
   console.log(`The Express server is listening at port: ${PORT}`)
