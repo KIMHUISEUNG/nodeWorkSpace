@@ -1,0 +1,8 @@
+# gitignore 파일을 생성하는 법은 간단한데, .git 파일이 존재하는 폴더에 .gitignore라는 파일을 생성한다음 업로드하기 싫은 파일들을 위와 같이 입력을 하면 된다.
+# 파일을 보면 .env 라는 파일과 node_modules라는 폴더, 그리고 .DS_Store라는 파일을 git에 업로드를 하지 않고 있다.
+# express로 만든 폴더에서 해당 자료들은 제외된 후에 git에 업로드 될 것이다.
+
+#ignore node_modules
+node_modules
+
+

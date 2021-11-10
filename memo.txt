@@ -1,0 +1,6 @@
+미들웨어
+req.requestedAt = requestedAt 으로 다른 미들웨어 에서 값을 받아 사용할 수 있다.
+
+app.use('/', async (req, res, next)=>{
+
+})
