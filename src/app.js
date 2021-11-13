@@ -13,8 +13,10 @@ app.set("views", "src/views")
 app.set("view engine", "pug")
 
 const userRouter = require("./routers/user")
+const mainRouter = require("./routers/mainpage")
 
 app.use("/users", userRouter)
+app.use("/main", mainRouter)
 app.use("/public", express.static("src/public"))
 app.use("/uploads", express.static("uploads"))
 

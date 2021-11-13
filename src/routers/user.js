@@ -9,11 +9,11 @@ const upload = multer({ dest: "uploads/" })
 const USERS = {
   15: {
     nickname: "foo",
-    profileImage: undefined,
+    profileImageKey: undefined,
   },
   16: {
     nickname: "bar",
-    profileImage: undefined,
+    profileImageKey: undefined,
   },
 }
 
@@ -47,7 +47,8 @@ router.get("/:id", (req, res) => {
       // @ts-ignore
       nickname: req.user.nickname,
       userId: req.params.id,
-      profileImageURL: "/uploads/dc2924a271ccfb0339cb09d1f022010a",
+      //   profileImageURL: "/uploads/618e2fbe7c5b9e1bc45f23b63a1fb9de",
+      profileImageURL: `/uploads/${req.user.profileImageKey}`,
     })
   }
 })
@@ -72,7 +73,7 @@ router.post("/:id/profile", upload.single("profile"), (req, res, next) => {
 
   const { user } = req
   const { filename } = req.file
-  user.profileImage = filename
+  user.profileImageKey = filename
   res.send(`User profile image uploaded: ${filename}`)
 })
 

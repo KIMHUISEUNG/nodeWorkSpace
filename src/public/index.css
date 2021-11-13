@@ -8,3 +8,6 @@ body {
 .green {
   color: green;
 }
+.profileImage {
+  width: 300px;
+}
