@@ -9,4 +9,8 @@ router.get("/self-Intro", (req, res) => {
   res.render("self-Intro")
 })
 
+router.get("/dev-stack", (req, res) => {
+  res.render("dev-stack")
+})
+
 module.exports = router
