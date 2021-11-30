@@ -32,54 +32,55 @@ html
           form.d-flex
             input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
             button.btn.btn-outline-success(type='submit') Search
+   
+    div(align='center')
+      .container-xl.mx-2.py-4.px-1(style='margin-top: 2px')
+        .row
+          .col
+              img(src='images/hs-profile.png' class='img-fluid;' style='width: 640px;' alt='profile-image')
 
-    .container.mx-2.py-4.px-1(style='margin-top: 2px')
-      .row
-        .col
-            img(src='images/hs-profile.png' class='img-fluid;' style='width: 640px;' alt='profile-image')
-
-        .col
-            .p-1.pt-0.pb-0.mb-4.bg-light.rounded-3(style='width: 640px;')
-                .container-fluid.py-3
-                    h1.display-5.fw-bold.text-center motto
-                    p.col-md-12.fs-4.text-center “우리모두 이번 생은 처음이다. 지금 옳은 선택을 하자 그리고 후회하지말자.”
-                    hr
-                    table.table(style='margin-bottom: 46px; margin-top: 48px;')
-                        thead
-                            tr
-                            th.px-0(scope='col' style='60px') Info
-                            th(scope='col')
-                            th(scope='col')
-                            th(scope='col')
-                        tbody
-                            tr
-                            th.px-0(scope='row') 이름
-                            td(colspan='3') 김희성
-                            tr
-                            th.px-0(scope='row') 영문 이름
-                            td(colspan='3') KIM HUISEONG
-                            tr
-                            th.px-0(scope='row') 생년월일
-                            td(colspan='3') 1997.05.17 | 25살
-                            tr
-                            th.px-0(scope='row') H.P
-                            td(colspan='3') 010 - 4077 - 8276
-                            tr
-                            th.px-0(scope='row') SNS
-                            td(colspan='3') Instagram : coding_hatso
-                            tr
-                            th.px-0(scope='row') 이메일
-                            td simpleman3636@gmail.com
-                            td
-                            td
-                            tr
-                            th.px-0(scope='row') 블로그
-                            td(colspan='2') 
-                                a(href='https://codinghatso.tistory.com') https://codinghatso.tistory.com
-                            td
-                            tr
-                            th.px-0(scope='row') Repository
-                            td(colspan='3') https://github.com/KIMHUISEUNG
+          .col
+              .p-1.pt-0.pb-0.mb-4.bg-light.rounded-3(style='max-width: 640px;')
+                  .container-fluid.py-3
+                      h1.display-5.fw-bold.text-center motto
+                      p.col-md-12.fs-4.text-center “우리모두 이번 생은 처음이다. 지금 옳은 선택을 하자 그리고 후회하지말자.”
+                      hr
+                      table.table(style='margin-bottom: 46px; margin-top: 48px;')
+                          thead
+                              tr
+                              th.px-0(scope='col' style='60px') Info
+                              th(scope='col')
+                              th(scope='col')
+                              th(scope='col')
+                          tbody
+                              tr
+                              th.px-0(scope='row') 이름
+                              td(colspan='3') 김희성
+                              tr
+                              th.px-0(scope='row') 영문 이름
+                              td(colspan='3') KIM HUISEONG
+                              tr
+                              th.px-0(scope='row') 생년월일
+                              td(colspan='3') 1997.05.17 | 25살
+                              tr
+                              th.px-0(scope='row') H.P
+                              td(colspan='3') 010 - 4077 - 8276
+                              tr
+                              th.px-0(scope='row') SNS
+                              td(colspan='3') Instagram : coding_hatso
+                              tr
+                              th.px-0(scope='row') 이메일
+                              td simpleman3636@gmail.com
+                              td
+                              td
+                              tr
+                              th.px-0(scope='row') 블로그
+                              td(colspan='2') 
+                                  a(href='https://codinghatso.tistory.com') https://codinghatso.tistory.com
+                              td
+                              tr
+                              th.px-0(scope='row') Repository
+                              td(colspan='3') https://github.com/KIMHUISEUNG
     
     
     .px-4.py-5.my-5.text-center
@@ -98,6 +99,7 @@ html
     .boxcsD
     .boxcs
     .boxcsU
+
     .px-4.pt-5.my-5.text-center.border-bottom.stack
       h1.display-4.fw-bold 기술 스택
       .col-lg-6.mx-auto
@@ -133,14 +135,14 @@ html
       .overflow-hidden(style='max-height: 30vh;')
         .container.px-5
           img.img-fluid.border.rounded-3.shadow-lg.mb-4(src='/images/noBadDay.jpg' alt='noBadDay image' width='700' height='400' loading='lazy')
-
+    
     #featured-3.container.px-4.py-5
       h2.pb-2.border-bottom Portfolio
       .row.g-4.py-5.row-cols-1.row-cols-lg-3
         .feature.col
-          .feature-icon.bg-primary.bg-gradient
+          .feature-icon.bg-primary.bg-gradient.rounded-3(style="margin-right: 342px;")
             svg.bi(width='1em' height='1em')
-              img(src='images/github.svg')
+              img(src='images/github.svg' style='padding-bottom: 10px; padding-top: 10px;')
           h2 Github
           p
             | Github는 팀 프로젝트를 형상관리하고 협업하는데에 도움을 주는 서비스입니다. 개발자의 성실함을 어필할 수 있는 도구로써 사용하고 있습니다.
@@ -149,9 +151,9 @@ html
             svg.bi(width='1em' height='1em')
               use(xlink:href='#chevron-right')
         .feature.col
-          .feature-icon.bg-primary.bg-gradient
+          .feature-icon.bg-primary.bg-gradient.rounded-3(style="margin-right: 342px;")
             svg.bi(width='1em' height='1em')
-              use(xlink:href='#people-circle')
+              img(src='images/github.svg' style='padding-bottom: 10px; padding-top: 10px;')
           h2 Tistory Blog
           p
             |  Tistory Blog는 개발자의 일상을 기록하고 인상깊었던 정보를 기록하고 공유하기 위한 공간입니다.
@@ -160,9 +162,9 @@ html
             svg.bi(width='1em' height='1em')
               use(xlink:href='#chevron-right')
         .feature.col
-          .feature-icon.bg-primary.bg-gradient
+          .feature-icon.bg-primary.bg-gradient.rounded-3(style="margin-right: 342px;")
             svg.bi(width='1em' height='1em')
-              use(xlink:href='#toggles2')
+              img(src='images/github.svg' style='padding-bottom: 10px; padding-top: 10px;')
           h2 Instagram
           p
             | Instagram은 블로그와는 다르게 간단한 카드뉴스 형태로 정보공유하기 위해 선택한 SNS 서비스입니다.
