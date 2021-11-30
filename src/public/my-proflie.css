@@ -1,0 +1,17 @@
+body {
+}
+.stack td {
+  background-color: palevioletred;
+}
+.boxcsD {
+  box-shadow: 0px 21px 20px rgba(0, 0, 0, 0.095);
+  height: 20px;
+}
+.boxcs {
+  background-color: rgba(0, 0, 0, 0.05);
+  height: 65px;
+}
+.boxcsU {
+  box-shadow: 0px -21px 20px rgba(0, 0, 0, 0.095);
+  height: 20px;
+}
