@@ -82,7 +82,10 @@ html
                               th.px-0(scope='row') Repository
                               td(colspan='3') https://github.com/KIMHUISEUNG
     
-    
+    .boxcsD
+    .boxcs
+    .boxcsU
+
     .px-4.py-5.my-5.text-center
       h1.display-5.fw-bold 소개
       .col-lg-6.mx-auto
@@ -143,7 +146,7 @@ html
           .feature-icon.bg-primary.bg-gradient.rounded-3(style="margin-right: 342px;")
             svg.bi(width='1em' height='1em')
               img(src='images/github.svg' style='padding-bottom: 10px; padding-top: 10px;')
-          h2.mt-8 Github
+          h2(style="margin-top: 20px;") Github
           p
             | Github는 팀 프로젝트를 형상관리하고 협업하는데에 도움을 주는 서비스입니다. 개발자의 성실함을 어필할 수 있는 도구로써 사용하고 있습니다.
           a.icon-link(href='https://github.com/KIMHUISEUNG')
@@ -172,6 +175,57 @@ html
             | goto Instagram
             svg.bi(width='1em' height='1em')
               use(xlink:href='#chevron-right')
+
+    #custom-cards.container.px-4.py-5
+      h2.pb-2.border-bottom Portfolio
+      .row.row-cols-1.row-cols-lg-3.align-items-stretch.g-4.py-5
+        .col
+          .card.card-cover.h-100.overflow-hidden.text-white.bg-dark.rounded-5.shadow-lg(style="background-image: url('images/github.svg');")
+            .d-flex.flex-column.h-100.p-5.pb-3.text-white.text-shadow-1
+              h2.pt-5.mt-5.mb-4.display-6.lh-1.fw-bold GitHub
+              ul.d-flex.list-unstyled.mt-auto
+                li.me-auto
+                  img.rounded-circle.border.border-white(src='https://github.com/twbs.png' alt='Bootstrap' width='32' height='32')
+                li.d-flex.align-items-center.me-3
+                  svg.bi.me-2(width='1em' height='1em')
+                    img(src='images/geo-fill.svg' class='white-filter' style='margin-right:5px')
+                  small Repository
+                li.d-flex.align-items-center
+                  svg.bi.me-2(width='1em' height='1em')
+                    img(src='images/link.svg' class='white-filter' style='margin-right:5px')
+                  small Click
+        .col
+          .card.card-cover.h-100.overflow-hidden.text-white.bg-dark.rounded-5.shadow-lg(style="background-image: url('images/columns.svg');")
+            .d-flex.flex-column.h-100.p-5.pb-3.text-white.text-shadow-1
+              h2.pt-5.mt-5.mb-4.display-6.lh-1.fw-bold Tistory Blog
+              ul.d-flex.list-unstyled.mt-auto
+                li.me-auto
+                  img.rounded-circle.border.border-white(src='https://github.com/twbs.png' alt='Bootstrap' width='32' height='32')
+                li.d-flex.align-items-center.me-3
+                  svg.bi.me-2(width='1em' height='1em')
+                    img(src='images/geo-fill.svg' class='white-filter' style='margin-right:5px')
+                  small Records
+                li.d-flex.align-items-center
+                  svg.bi.me-2(width='1em' height='1em')
+                    img(src='images/link.svg' class='white-filter' style='margin-right:5px')
+                  small Click
+        .col
+          .card.card-cover.h-100.overflow-hidden.text-white.bg-dark.rounded-5.shadow-lg(style="background-image: url('images/instagram.svg');")
+            .d-flex.flex-column.h-100.p-5.pb-3.text-shadow-1
+              h2.pt-5.mt-5.mb-4.display-6.lh-1.fw-bold Instagram
+              ul.d-flex.list-unstyled.mt-auto
+                li.me-auto
+                  img.rounded-circle.border.border-white(src='https://github.com/twbs.png' alt='Bootstrap' width='32' height='32')
+                li.d-flex.align-items-center.me-3
+                  svg.bi.me-2(width='1em' height='1em')
+                    img(src='images/geo-fill.svg' class='white-filter' style='margin-right:5px')
+                  small SNS
+                li.d-flex.align-items-center
+                  svg.bi.me-2(width='1em' height='1em')
+                    img(src='images/link.svg' class='white-filter' style='margin-right:5px')
+                  small Click
+
+    
     .container
       footer.py-3.my-4
         ul.nav.justify-content-center.border-bottom.pb-3.mb-3
