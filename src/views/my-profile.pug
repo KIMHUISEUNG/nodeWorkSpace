@@ -16,7 +16,8 @@ html
     //
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    nav.navbar.navbar-expand-md.navbar-dark.bg-dark.mb-1
+    
+    nav.navbar.navbar-expand-md.navbar-dark.bg-dark.mb-1.fixed-top
       .container-fluid
         a.navbar-brand(href='/') KIM HUISEONG
         button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarCollapse' aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation')
@@ -34,7 +35,7 @@ html
             button.btn.btn-outline-success(type='submit') Search
    
     div(align='center')
-      .container-xl.mx-2.py-4.px-1(style='margin-top: 2px')
+      .container-xl.mx-2.py-4.px-1(style='margin-top: 40px')
         .row
           .col
               img(src='images/hs-profile.png' class='img-fluid;' style='width: 640px;' alt='profile-image')
@@ -112,25 +113,140 @@ html
         table.table
           thead
             tr
-              th(scope='col') #
-              th(scope='col') First
-              th(scope='col') Last
-              th(scope='col') Handle
+              th(scope='col' style="width: 64px") dev-stack
+              th(scope='col' style="width: 96px") 0
+              th(scope='col' style="width: 96px") 25
+              th(scope='col' style="width: 96px") 50
+              th(scope='col' style="width: 96px") 75
+              th(scope='col' style="width: 96px") 100
           tbody
             tr
-              th(scope='row') 1
-              td Mark
-              td Otto
-              td @mdo
-            tr.bg-green-400
-              th(scope='row') 2
-              td.bg-green-400 Jacob
-              td Thornton
-              td @fat
+              th(scope='row') HTML/CSS
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td
             tr
-              th(scope='row') 3
-              td stack
-              td @twitter
+              th(scope='row') Javascript
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td
+              td
+            tr
+              th(scope='row') Node.js
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
+            tr
+              th(scope='row') Linux
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
+            tr
+              th(scope='row') MYSQL
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
+              td 
+            tr
+              th(scope='row') JAVA
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
+              td 
+            tr
+              th(scope='row') C/C++
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
+              td 
+              td 
+            tr
+              th(scope='row') Python
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
               td 
         form(action='/dev-stack' type="get")
           .d-grid.gap-2.d-sm-flex.justify-content-sm-center.mb-5
