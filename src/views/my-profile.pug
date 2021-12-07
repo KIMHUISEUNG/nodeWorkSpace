@@ -8,6 +8,7 @@ html
     link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3' crossorigin='anonymous')
     link(rel="stylesheet", type="text/css" href="../public/my-proflie.css")
     title HS portfolio page
+    link(rel='shortcut icon' href='images/ico/hs-logo.ico')
   body
     // Optional JavaScript; choose one of the two!
     // Option 1: Bootstrap Bundle with Popper
@@ -25,11 +26,13 @@ html
         #navbarCollapse.collapse.navbar-collapse
           ul.navbar-nav.me-auto.mb-2.mb-md-0
             li.nav-item
-              a.nav-link.active(aria-current='page' href='#') Home
+              a.nav-link.active(aria-current='page' href='/self-Intro') 자기소개
             li.nav-item
-              a.nav-link(href='#') Link
+              a.nav-link.active(href='/dev-stack') 기술스택
             li.nav-item
-              a.nav-link.disabled Disabled
+              a.nav-link.active(href='/about') About
+            li.nav-item
+              a.nav-link.active(href='/connection') connection
           form.d-flex
             input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
             button.btn.btn-outline-success(type='submit') Search
@@ -248,6 +251,88 @@ html
                 img(src='images/file-minus-fill.svg')
               td 
               td 
+        table.table
+          thead
+            tr
+              th(scope='col' style="width: 64px") other-stack
+              th(scope='col' style="width: 96px") 0
+              th(scope='col' style="width: 96px") 25
+              th(scope='col' style="width: 96px") 50
+              th(scope='col' style="width: 96px") 75
+              th(scope='col' style="width: 96px") 100
+          tbody
+            tr
+              th(scope='row') Adobe PP/AE
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td
+            tr
+              th(scope='row') Adobe Illustrator
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td
+              td
+            tr
+              th(scope='row') MS Office
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
+            tr
+              th(scope='row') Maya
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+                img(src='images/file-minus-fill.svg')
+              td 
+            
         form(action='/dev-stack' type="get")
           .d-grid.gap-2.d-sm-flex.justify-content-sm-center.mb-5
             button.btn.btn-outline-secondary.btn-lg.px-4(type='submit') 더보기
@@ -264,7 +349,7 @@ html
               h2.pt-5.mt-5.mb-4.display-6.lh-1.fw-bold GitHub
               ul.d-flex.list-unstyled.mt-auto
                 li.me-auto
-                  img.rounded-circle.border.border-white(src='https://github.com/twbs.png' alt='Bootstrap' width='32' height='32')
+                  img.rounded-circle.border.border-white(src='images/ico/hs-logo.png' alt='Bootstrap' width='32' height='32')
                 li.d-flex.align-items-center.me-3
                   svg.bi.me-2(width='1em' height='1em')
                     img(src='images/geo-fill.svg' class='white-filter' style='margin-right:5px')
@@ -279,7 +364,7 @@ html
               h2.pt-5.mt-5.mb-4.display-6.lh-1.fw-bold Tistory Blog
               ul.d-flex.list-unstyled.mt-auto
                 li.me-auto
-                  img.rounded-circle.border.border-white(src='https://github.com/twbs.png' alt='Bootstrap' width='32' height='32')
+                  img.rounded-circle.border.border-white(src='images/ico/hs-logo.png' alt='Bootstrap' width='32' height='32')
                 li.d-flex.align-items-center.me-3
                   svg.bi.me-2(width='1em' height='1em')
                     img(src='images/geo-fill.svg' class='white-filter' style='margin-right:5px')
@@ -294,7 +379,7 @@ html
               h2.pt-5.mt-5.mb-4.display-6.lh-1.fw-bold Instagram
               ul.d-flex.list-unstyled.mt-auto
                 li.me-auto
-                  img.rounded-circle.border.border-white(src='https://github.com/twbs.png' alt='Bootstrap' width='32' height='32')
+                  img.rounded-circle.border.border-white(src='images/ico/hs-logo.png' alt='Bootstrap' width='32' height='32')
                 li.d-flex.align-items-center.me-3
                   svg.bi.me-2(width='1em' height='1em')
                     img(src='images/geo-fill.svg' class='white-filter' style='margin-right:5px')
@@ -306,8 +391,11 @@ html
 
     
     .container
-      footer.py-3.my-4
-        ul.nav.justify-content-center.border-bottom.pb-3.mb-3
+      footer.d-flex.flex-wrap.justify-content-between.align-items-center.py-3.my-4.border-top
+        p.col-md-4.mb-0.text-muted © 2021 HatSo, Inc
+        a.col-md-4.d-flex.align-items-center.justify-content-center.mb-3.mb-md-0.me-md-auto.link-dark.text-decoration-none(href='/')
+          img(src='images/ico/hs-logo.png' style='width: 60px')
+        ul.nav.col-md-4.justify-content-end
           li.nav-item
             a.nav-link.px-2.text-muted(href='#') Home
           li.nav-item
@@ -318,4 +406,3 @@ html
             a.nav-link.px-2.text-muted(href='#') FAQs
           li.nav-item
             a.nav-link.px-2.text-muted(href='#') About
-        p.text-center.text-muted © 2021 Company, Inc

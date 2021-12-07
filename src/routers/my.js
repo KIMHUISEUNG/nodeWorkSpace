@@ -13,4 +13,12 @@ router.get("/dev-stack", (req, res) => {
   res.render("dev-stack")
 })
 
+router.get("/about", (req, res) => {
+  res.render("about")
+})
+
+router.get("/connection", (req, res) => {
+  res.render("connection")
+})
+
 module.exports = router
