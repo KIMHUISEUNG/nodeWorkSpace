@@ -33,14 +33,76 @@ html
           form.d-flex
             input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
             button.btn.btn-outline-success(type='submit') Search
-    
-    .px-4.pt-5.my-5.text-center.border-bottom
+
+    head 
+      link(rel="stylesheet", type="text/css" href="../public/style.css")
+    .px-4.pt-5.my-5.text-center.border-bottom.stack
       h1.display-4.fw-bold 기술 스택
       .col-lg-6.mx-auto
         h3 바르게 성장하는 중
         p.lead.mb-4
-          | 개발자로서의 역량을 시각적으로 기록해 보았습니다.
-        
+          | 개발 역량을 나타내는 설명을 작성해 보았습니다.
+        table.table
+          thead
+            tr
+              th(scope='col' style="width: 64px") dev-stack
+              th(scope='col' style="width: 96px") 
+              th(scope='col' style="width: 96px") 
+              th(scope='col' style="width: 96px") discription
+              th(scope='col' style="width: 96px") 
+              th(scope='col' style="width: 96px") 
+          tbody
+            tr
+              th(scope='row') HTML/CSS
+              td(colspan='5') public web site에서 동인한 디자인을 만들 수 있습니다.
+            tr
+              th(scope='row') Javascript
+              td(colspan='5') 핵심 기본 기능을 이해하고 있으며 ECMAScript의 한계를 극복하기 위해 다양한 API를 사용합니다.
+            tr
+              th(scope='row') Node.js
+              td(colspan='5') 미들웨어 기반의 개발을 할 수 있게 되고 풀스텍 개발이 가능하게 해줍니다. 또한 express 프레임워크 환경에 맞춘 개발 가능.
+            tr
+              th(scope='row') Linux
+              td(colspan='5') POXIS 기반 CLI 환경을 선호하는 개발자이며, 컴퓨터의 디렉터리 구조에대한 이해가 높음. 시그널로 SW 인터럽트 사용가능, 파일 검색 명령어 활용가능 (find, grep)
+            tr
+              th(scope='row') MYSQL
+              td(colspan='5') DCL DDL DML 사용하여 데이터 조작가능, 정규화와 반정규화가 어떻게 적용되는지 이해하고 있음. CLI, CUI 두 환경에서 개발하는 것에익숙.
+            tr
+              th(scope='row') JAVA
+              td(colspan='5') 객체지향 프로그래밍에 대한 이해완료, 자바의 핵심 기본 기능을 이해하고 있습니다.
+            tr
+              th(scope='row') C/C++
+              td(colspan='5') 기본 C언어에 여러 기능을 추가해서 C++을 만들었으며 객체와 절차적 언어의 특성을 동시해 지닌 언어임. 배열 포인터와 구조체를 이해하고 있습니다.
+            tr
+              th(scope='row') Python
+              td(colspan='5') 자료구조 구현이 가능하며, AI 프로젝트를 진행하며 TensorFlow를 활용한 많은 라이브러를 이용한 모델링 경험 보유.
+        table.table
+          thead
+            tr
+              th(scope='col' style="width: 64px") other-stack
+              th(scope='col' style="width: 96px") 
+              th(scope='col' style="width: 96px") 
+              th(scope='col' style="width: 96px") discription
+              th(scope='col' style="width: 96px") 
+              th(scope='col' style="width: 96px") 
+          tbody
+            tr
+              th(scope='row') Adobe PP/AE
+              td(colspan='5') 교내에서 개최한 유튜브 공모전에서 우수상을 입상, Adobe tool들의 호완 관개성을 파악하고 기획했던 내용을 영상으로 구현가능.
+            tr
+              th(scope='row') Adobe Illustrator
+              td(colspan='5') 개발소스를 필요에 따라 스스로 제작하여 사용함, 파일의 확장자마다의 속성을 이해하고 있음. 규격에 맞춘 개발소스 추출 가능.
+            tr
+              th(scope='row') MS Office
+              td(colspan='5') MS Office tool을 사용하는데 매우 능숙함. 작업 시간을 적약할 수 있는 개발자, 프레젠테이션(표현)능력이 좋음.
+            tr
+              th(scope='row') Maya
+              td(colspan='5') 솔리드 모델링이 가능하며 매우 능숙함 애니메이션과 리깅 작업 가능 Uinty와 연동하여 직접만든 모델을 사용할 수 있음.
+            
+      .overflow-hidden(style='max-height: 30vh;')
+        .container.px-5.my-margin
+          img.img-fluid.border.rounded-3.shadow-lg.mb-4(src='/images/noBadDay.jpg' alt='noBadDay image' width='700' height='400' loading='lazy')
+
 
     .container
       footer.d-flex.flex-wrap.justify-content-between.align-items-center.py-3.my-4.border-top

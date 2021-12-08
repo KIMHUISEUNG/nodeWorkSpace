@@ -38,7 +38,7 @@ html
             button.btn.btn-outline-success(type='submit') Search
 
     head 
-    link(rel="stylesheet", type="text/css" href="../public/stylesheets/style.css")
+      link(rel="stylesheet", type="text/css" href="../public/style.css")
     .container
       main
         .py-5.text-center.my-mt
@@ -47,22 +47,25 @@ html
             | 연락처를 남겨주세요.
 
         .container.content-box(style='width: 550px')
-            form.needs-validation(novalidate='')
-            .row.g-3
-                .col-12
-                label.form-label(for='username') Name
-                .input-group.has-validation
-                  input#name.form-control(type='text' placeholder='Username' required='')
-                .col-12
-                label.form-label(for='email') Email 
-                input#email.form-control(type='email' placeholder='you@example.com')
-                .invalid-feedback
-                    | Please enter a valid email address for shipping updates.
-                label.form-label(for="description") 남기는 말
-                input.form-control(type='textarea' placeholder='Why are you contacting me?')
+          form.needs-validation(action='/' novalidate='')
+          .row.g-3
+            .col-12
+            label.form-label(for='username') Name
+            .input-group.has-validation
+              input#name.form-control(type='text' placeholder='Username' required='')
+            .col-12
+            label.form-label(for='email') Email 
+            input#email.form-control(type='email' placeholder='you@example.com')
+
+            .col-12
+            label.form-label(for='email') Tel. 
+            input#email.form-control(type='tel' placeholder='phone number')
+
+            label.form-label(for="description") 남기는 말
+            input.form-control.input-description(type='text' placeholder='Why are you contacting me?')
 
 
-                button.w-100.btn.btn-primary.btn-lg(type='submit') 연락처 남기기
+            button.w-100.btn.btn-primary.btn-lg(type='submit') 연락처 남기기
 
     .container
       footer.d-flex.flex-wrap.justify-content-between.align-items-center.py-3.my-4.border-top
